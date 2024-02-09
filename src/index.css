@@ -1,0 +1,61 @@
+body{
+  font-family:'ITC Franklin Gothic', 'Arial Narrow', Arial, sans-serif
+}
+
+.header{
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
+}
+
+.logo {
+  border: 3px solid cadetblue;
+  width: 25%
+}
+
+.responsive {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .responsive {
+    display: flex;
+  }
+
+  .full-view {
+    display: none;
+  }
+
+  .logo{
+    width: 50%;
+  }
+
+  .header h5 i{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .responsive {
+    display: inline;
+  }
+
+  .full-view {
+    display: none;
+  }
+
+  .logo {
+    width: 50%;
+  }
+
+  .header h5 i{
+    display: none;
+  }
+
+
+  .header{
+    display: flex;
+    align-items: center;
+  }
+
+}
+
